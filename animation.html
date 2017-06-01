@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #14a3ef;
+            position: absolute;
+            animation: a01 5s infinite alternate linear;
+            /*
+            方向:
+                reverse 反向
+                alternate 正反向
+            速度:
+                ease 
+                ease-in 
+                ease-out 
+                ease-in-out 
+                linear
+            */
+        }
+        @keyframes a01 {
+            from {top:0;background-color: #14a3ef;}
+            to {top:500px;background-color: #f5ff00;}
+        }
+        @keyframes a02 {
+            0% {top:0;left:0;}
+            50% {top:0;left:300px;}
+            100% {top:300px;left:300px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
